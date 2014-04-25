@@ -91,7 +91,7 @@ public class randomStuff extends JavaPlugin implements Listener
             if(event.getItem()!=null && event.getItem().getType()!=null && event.getItem().getType().equals(Material.EMERALD)){
                 public void openGUI(Player p){
                 inv = Bukkit.createInventory(null, 43, "Jackpot!"); //format: null, size of inventory (must be divisible by 4), "GUI name"
-                for(x = 0; x <= 43; x++)
+                for(x = 0; x < 43; x++)
                 {
                     inv.setItem(x, new ItemStack(Material.DIAMOND);
                 }
