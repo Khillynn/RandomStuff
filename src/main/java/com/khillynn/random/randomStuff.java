@@ -13,6 +13,7 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
+import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -87,16 +88,15 @@ public class randomStuff extends JavaPlugin implements Listener
     @EventHandler
     public void PlayerRightClick(PlayerInteractEvent event)
     {
+        Player p = event.getPlayer();
         if(event.getAction().equals(Action.RIGHT_CLICK_AIR) || event.getAction().equals(Action.RIGHT_CLICK_BLOCK)){
             if(event.getItem()!=null && event.getItem().getType()!=null && event.getItem().getType().equals(Material.EMERALD)){
-                public void openGUI(Player p){
-                inv = Bukkit.createInventory(null, 43, "Jackpot!"); //format: null, size of inventory (must be divisible by 4), "GUI name"
-                for(x = 0; x < 43; x++)
+                Inventory inv = Bukkit.createInventory(null, 43, "Jackpot!"); //format: null, size of inventory (must be divisible by 4), "GUI name"
+                for(int x = 0; x < 43; x++)
                 {
-                    inv.setItem(x, new ItemStack(Material.DIAMOND);
+                    inv.setItem(x, new ItemStack(Material.DIAMOND));
                 }
                 p.openInventory(inv);
-}
             }
         }
     }
