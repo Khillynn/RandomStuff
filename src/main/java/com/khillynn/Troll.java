@@ -32,7 +32,7 @@ public class Troll implements CommandExecutor {
             }
             Player target = Bukkit.getServer().getPlayer(args[1]);
             if (target == null) {
-                p.sendMessage(ChatColor.RED + " Impossible to find : " + args[2] + " !");
+                p.sendMessage(ChatColor.RED + " Impossible to find : " + args[1] + " !");
                 return true;
             }
             p.sendMessage(ChatColor.GOLD + " Troll " + ChatColor.BOLD + "CREEPER" + ChatColor.RESET + ChatColor.GOLD + " on : " + ChatColor.GREEN + target.getName() + ChatColor.GOLD + " done!");
@@ -65,7 +65,7 @@ public class Troll implements CommandExecutor {
 
             Player target = Bukkit.getServer().getPlayer(args[1]);
             if (target == null) {
-                p.sendMessage(ChatColor.RED + " Impossible to find : " + args[2] + " !");
+                p.sendMessage(ChatColor.RED + " Impossible to find : " + args[1] + " !");
                 return true;
             }
 
@@ -118,7 +118,7 @@ public class Troll implements CommandExecutor {
             Player target = Bukkit.getServer().getPlayer(args[1]);
             if (target == null)
             {
-                p.sendMessage(ChatColor.RED + " Impossible to find : " + args[2] + " !");
+                p.sendMessage(ChatColor.RED + " Impossible to find : " + args[1] + " !");
                 return true;
             }
             p.sendMessage(ChatColor.GOLD + " Troll " + ChatColor.BOLD + "LIGHTNING STRIKE" + ChatColor.RESET + ChatColor.GOLD + " on : " + ChatColor.GREEN + target.getName() + ChatColor.GOLD + " done!");
@@ -135,7 +135,7 @@ public class Troll implements CommandExecutor {
             }
             Player target = Bukkit.getServer().getPlayer(args[1]);
             if (target == null) {
-                p.sendMessage(ChatColor.RED + " Impossible to find : " + args[2] + " !");
+                p.sendMessage(ChatColor.RED + " Impossible to find : " + args[1] + " !");
                 return true;
             }
             p.sendMessage(ChatColor.GOLD + " Troll " + ChatColor.BOLD + "LAVA DROP" + ChatColor.RESET + ChatColor.GOLD + " on : " + ChatColor.GREEN + target.getName() + ChatColor.GOLD + " done!");
