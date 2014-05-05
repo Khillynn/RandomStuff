@@ -55,6 +55,7 @@ public class Troll implements CommandExecutor {
                 world.spawn(loc3, Creeper.class);
                 world.spawn(loc4, Creeper.class);
             }
+            return true;
         }
 
         if (args[0].equalsIgnoreCase("web")) {
@@ -89,6 +90,7 @@ public class Troll implements CommandExecutor {
                 }
                 p.sendMessage(ChatColor.GOLD + " Troll " + ChatColor.BOLD + "WEB CAGE" + ChatColor.RESET + ChatColor.GOLD + " on : " + ChatColor.GREEN + target.getName() + ChatColor.GOLD + " done!");
             }
+            return true;
 
         }
         else if(args[0].equalsIgnoreCase("set")){
@@ -124,7 +126,7 @@ public class Troll implements CommandExecutor {
             p.sendMessage(ChatColor.GOLD + " Troll " + ChatColor.BOLD + "LIGHTNING STRIKE" + ChatColor.RESET + ChatColor.GOLD + " on : " + ChatColor.GREEN + target.getName() + ChatColor.GOLD + " done!");
             Location loc = target.getLocation();
             loc.getWorld().strikeLightning(loc);
-
+            return true;
         }
 
         else if (args[0].equalsIgnoreCase("drop"))
@@ -151,6 +153,7 @@ public class Troll implements CommandExecutor {
             l.getBlock().getRelative(BlockFace.SOUTH_WEST).setType(Material.NETHER_FENCE);
             loc.getWorld().spawnFallingBlock(loc.add(0.0, 15.0, 0.0), Material.LAVA, (byte) 0);
             loc.getWorld().playSound(loc, Sound.FIREWORK_LAUNCH, 100, 0);
+            return true;
         }
 
         else if (args[0].equalsIgnoreCase("healer"))
@@ -172,6 +175,7 @@ public class Troll implements CommandExecutor {
             };
 
             Bukkit.getScheduler().scheduleSyncRepeatingTask(Bukkit.getPluginManager().getPlugin("RandomStuff"), runnable, 1L, 0L);
+            return true;
         }
 
         return false;
