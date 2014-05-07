@@ -35,7 +35,7 @@ public class Quake
                     e.getPlayer().launchProjectile(WitherSkull.class);
                     e.getPlayer().playSound(loc, Sound.GHAST_FIREBALL, 100, 0);
 
-                    WitherSkull bullet = (WitherSkull) e.getPlayer().getWorld().spawnEntity(e.getPlayer().getLocation(), EntityType.FIREWORK);
+                    WitherSkull bullet = (WitherSkull) e.getPlayer().getWorld().spawnEntity(e.getPlayer().getLocation(), EntityType.WitherSkull);
                     bullet.setVelocity(e.getPlayer().getLocation().getDirection().multiply(1.5));
                 }
             }
