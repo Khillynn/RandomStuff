@@ -113,6 +113,7 @@ public class randomStuff extends JavaPlugin implements Listener
         getCommand("troll").setExecutor(troll);
         //no es troll but
         getCommand("healer").setExecutor(troll);
+        Quake quake = new Quake();
     }
 
 
