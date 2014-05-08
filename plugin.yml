@@ -1,0 +1,9 @@
+name: randomStuff
+version: 1.0
+description: starter plugin stuff
+author: Khillynn
+main: com.khillynn.random.randomStuff
+commands:
+troll:
+description: various pranks
+permission: everyone
